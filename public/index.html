@@ -25,52 +25,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>panenko.sk</title>
-    <script>
-      // Add this script before closing head tag
-      document.addEventListener('DOMContentLoaded', function() {
-        const titles = [
-          "panenko.sk",
-          "Web Development",
-          "React Applications",
-          "AI Solutions"
-        ];
-        
-        let currentIndex = 0;
-        let isDeleting = false;
-        let text = '';
-        let baseTitle = "panenko.sk";
-        
-        function typeTitle() {
-          const currentTitle = titles[currentIndex];
-          const targetText = baseTitle + " | " + currentTitle;
-          
-          if (!isDeleting) {
-            text = targetText.substring(0, text.length + 1);
-          } else {
-            text = text.substring(0, text.length - 1);
-          }
-
-          document.title = text;
-
-          let typeSpeed = 150;
-          
-          if (!isDeleting && text === targetText) {
-            typeSpeed = 2000;
-            isDeleting = true;
-          } else if (isDeleting && text === baseTitle) {
-            isDeleting = false;
-            currentIndex = (currentIndex + 1) % titles.length;
-          } else if (isDeleting) {
-            typeSpeed = 75;
-          }
-
-          setTimeout(typeTitle, typeSpeed);
-        }
-
-        // Start the animation
-        typeTitle();
-      });
-    </script>
+    <script src="%PUBLIC_URL%/title.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

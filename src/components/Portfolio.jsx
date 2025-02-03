@@ -12,7 +12,7 @@ const Portfolio = () => {
         <>
           Moderná react aplikácia zameraná na osobný rozvoj
           <a 
-            href="https://github.com/yourusername/project1" 
+            href="https://github.com/majosnv" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-400 ml-2 inline-flex items-center"
@@ -60,7 +60,7 @@ const Portfolio = () => {
         </>
       ),
       image: "/project2.jpg",
-      url: "https://github.com/majosnv",
+      url: "https://www.linkedin.com/in/mariopanenko/details/projects/",
       tech: [
         { name: 'HTML5', icon: 'vscode-icons:file-type-html' },
         { name: 'CSS3', icon: 'vscode-icons:file-type-css' },
@@ -275,27 +275,19 @@ const Portfolio = () => {
             {/* Animated Profile Image */}
             <motion.div 
               className="flex justify-center items-center"
-              initial={{ scale: 0.9, opacity: 0, rotate: -5 }}
-              animate={{ scale: 1, opacity: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 100, damping: 10 }}
               whileHover={{ 
                 scale: 1.05,
-                rotate: 2,
-                boxShadow: "0 0 25px rgba(37, 99, 235, 0.3)"
+                transition: { type: "spring", stiffness: 300 }
               }}
             >
               <motion.img 
                 src="/profile.jpg"
                 alt="Profile"
-                className="w-64 h-64 rounded-full border-4 border-blue-600 cursor-pointer"
-                animate={{
-                  y: [0, -15, 0],
-                  rotate: [0, 2, -2, 0]
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: "easeInOut"
+                className="w-64 h-64 rounded-full border-4 border-blue-600 cursor-pointer transition-all duration-300 hover:border-blue-500 hover:shadow-2xl hover:shadow-blue-600/30"
+                whileHover={{
+                  scale: 1.1,
+                  rotate: 3,
+                  boxShadow: "0 0 30px rgba(37, 99, 235, 0.4)"
                 }}
               />
             </motion.div>
