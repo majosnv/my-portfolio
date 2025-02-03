@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #2563eb; /* Your blue-600 color */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.underline-3d {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-3d::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: #2563eb;
+  transform: rotate(-2deg) translateY(2px);
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 0 rgba(37, 99, 235, 0.3);
+}
+
+.underline-3d:hover::after {
+  transform: rotate(1deg) translateY(3px);
+  box-shadow: 3px 3px 0 rgba(37, 99, 235, 0.4);
+}
