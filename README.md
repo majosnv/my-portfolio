@@ -58,7 +58,7 @@ my-portfolio/
 
 1. Clone the repository:
    ```bash
-   git clone <your-repository-URL>
+   git clone https://github.com/majosnv/my-portfolio.git
    cd my-portfolio
    ```
 
