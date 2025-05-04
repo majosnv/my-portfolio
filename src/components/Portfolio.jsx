@@ -356,7 +356,7 @@ const project2GalleryImages = [
                 riešení.
               </p>
               <p className="text-gray-400 text-lg">
-                Môj záujem o počítače sa prejavil už vo veľmi mladom veku. Môj prvý programátorský projekt bol, keď som mal 13-14 rokov. Bol to herný portál s názvom BlueZone.sk, ktorý hostoval CS 1.6 servery. Vytvoril som webové fórum a hlavnú stránku pomocou PHP-Fusion, neskôr WordPress. Platforma podporovala pridávanie pluginov ako návštevníci a témy, čo ju robilo prispôsobiteľnou a funkčnou.
+                Môj záujem o počítače sa prejavil už vo veľmi mladom veku. Môj prvý programátorský projekt bol, keď som mal 13-14 rokov. Bol to herný portál s názvom BlueZone.sk, ktorý hostoval CS 1.6 servery. Vytvoril som webové fórum a stránku pomocou PHP-Fusion, neskôr WordPress. Platforma podporovala pridávanie pluginov ako návštevníci a témy, čo ju robilo prispôsobiteľnou a funkčnou.
               </p>
               <p className="text-gray-400 text-lg">
                 Keď práve neprogramujem, venujem sa silovému cvičeniu v posilovni a v letnom období jazde na motorke 😄. Tieto aktivity mi pomáhajú udržiavať rovnováhu medzi profesionálnym a osobným životom, pričom zároveň rozvíjam svoje zručnosti.
