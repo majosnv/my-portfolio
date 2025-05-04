@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Portfolio Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This is a personal portfolio web application created using React.js. The site presents professional experiences, projects, and skills of the developer. The application is responsive, with a modern design and smooth animations created using Framer Motion.
 
-In the project directory, you can run:
+Live demo: https://panenko.netlify.app/
 
-### `npm start`
+## Main Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Modern, responsive design
+- Animations created with Framer Motion
+- Projects section with GitHub links
+- Overview of technical skills with icons
+- Contact options
+- Mobile device optimization
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+- React.js 19
+- Tailwind CSS for styling
+- Framer Motion for animations
+- Iconify for icons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```
+my-portfolio/
+│
+├── public/                  # Static files
+│   ├── index.html           # Main HTML file
+│   ├── title.js             # JavaScript for dynamic title
+│   ├── ja.png               # Profile image
+│   ├── project1.png         # Project 1 image
+│   └── project2.jpg         # Project 2 image
+│
+├── src/                     # Application source code
+│   ├── components/          # React components
+│   │   └── Portfolio.jsx    # Main portfolio component
+│   ├── App.js               # Main React component
+│   ├── index.js             # Application entry point
+│   ├── App.css              # Styles for App.js
+│   └── index.css            # Global styles
+│
+├── package.json             # Project configuration and dependencies
+├── package-lock.json        # Exact versions of dependencies
+└── tailwind.config.js       # Tailwind CSS configuration
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Running the Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Requirements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
 
-### `npm run eject`
+### Installation Steps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-URL>
+   cd my-portfolio
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+   
+4. Open a browser and visit: `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Creating a Production Version
 
-## Learn More
+To create an optimized production version:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The resulting files will be saved to the `build/` folder and are ready for deployment.
 
-### Code Splitting
+## File Explanation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Key Files
 
-### Analyzing the Bundle Size
+- **src/components/Portfolio.jsx** - Main component containing the entire portfolio including projects section, skills, and contacts
+- **src/App.js** - Root React component that renders the Portfolio component
+- **public/index.html** - Basic HTML file with metadata and links to static resources
+- **tailwind.config.js** - Tailwind CSS configuration, defines custom colors and fonts
+- **public/title.js** - JavaScript for dynamic browser title changes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Directories
 
-### Making a Progressive Web App
+- **public/** - Contains static files such as images, icons, and HTML template
+- **src/** - Contains all application source code
+- **src/components/** - Contains React components for individual parts of the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Content Modification
 
-### Advanced Configuration
+To modify the portfolio, simply edit the `src/components/Portfolio.jsx` file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The `projects` array to update displayed projects
+- The `skills` array to update displayed skills
+- The contact section at the bottom of the file
